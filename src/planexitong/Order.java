@@ -11,7 +11,7 @@ public class Order {
     private float jpgtx;    //机票退改险
     private float yhq;    //优惠券
     private float hszj;     //含税总价
-    private Set<Customer> customerset;
+    private Set<Customer> customerSet;
 
     public String getId() {
         return id;
@@ -78,10 +78,10 @@ public class Order {
     }
 
     public Set<Customer> getCustomerset() {
-        return customerset;
+        return customerSet;
     }
 
     public void setCustomerset(Set<Customer> customerset) {
-        this.customerset = customerset;
+        this.customerSet = customerset;
     }
 }
