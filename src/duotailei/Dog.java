@@ -1,15 +1,14 @@
 package duotailei;
 
 public class Dog extends Animal {
-    private String dogjiao;
 
-    public Dog(String dogjiao) {
-        this.dogjiao=dogjiao;
+    public Dog(String name) {
+        super(name);
     }
 
     @Override
-    public String fangshi() {
-        System.out.println("小狗叫的方式：");
-        return dogjiao;
+    public void bark() {
+        System.out.println(getName()+"在汪汪叫");
+
     }
 }

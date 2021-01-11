@@ -2,11 +2,12 @@ package duotailei;
 
 public class Cat extends Animal {
 
-    private String maojiao="喵喵叫";
+    public Cat(String name) {
+        super(name);
+    }
 
     @Override
-    public String fangshi() {
-        System.out.println("小猫叫的方式：");
-        return maojiao;
+    public void bark() {
+        System.out.println(getName()+"在喵喵叫");
     }
 }

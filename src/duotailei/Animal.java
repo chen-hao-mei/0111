@@ -2,6 +2,14 @@ package duotailei;
 
 public abstract class Animal {
 
-    private int bark;
-    public abstract String fangshi();
+    private String name;
+    public Animal(String name){
+        this.name=name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public abstract void bark();
 }
